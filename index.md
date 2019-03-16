@@ -1,5 +1,4 @@
 ---
-title: FCDroid
 redirect_from: "/results/"
 ---
 # FCDroid
