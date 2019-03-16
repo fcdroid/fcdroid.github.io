@@ -1,3 +1,6 @@
+---
+redirect_from: "/results/"
+---
 # FCDroid
 
 ### Abstract
