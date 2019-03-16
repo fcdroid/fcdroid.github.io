@@ -1,4 +1,6 @@
 ---
+layout: page
+title: FCDroid
 redirect_from: "/results/"
 ---
 # FCDroid
