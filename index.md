@@ -17,9 +17,9 @@ The FCDroid is composed by five main building blocks: the *Static Analysis Modul
 *Coming soon*
 
 ### Team
-* [Davide Caputo](http://csec.it/people/davide_caputo), University of Genova, Italy
+* [Davide Caputo](https://csec.it/people/davide_caputo), University of Genova, Italy
 * [Luca Verderame](www.talos-sec.com), University of Genova, Italy
-* [Simone Aonzo](http://csec.it/people/simone_aonzo), University of Genova, Italy
-* [Alessio Merlo](http://csec.it/people/alessio_merlo), University of Genova, Italy
+* [Simone Aonzo](https://csec.it/people/simone_aonzo), University of Genova, Italy
+* [Alessio Merlo](https://csec.it/people/alessio_merlo), University of Genova, Italy
 
 ### Acknowledgment
