@@ -503,3 +503,7 @@ table {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+  .text-justify {
+    text-align: justify;
+  }
