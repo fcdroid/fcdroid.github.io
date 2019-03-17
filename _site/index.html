@@ -31,19 +31,32 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h3 id="abstract"><strong>Abstract</strong></h3>
+        <div class="home"><h2 id="abstract">Abstract</h2>
 <p class="text-justify"><strong>Frame Confusion</strong> is a vulnerability affecting hybrid applications which allows circumventing the isolation granted by the <strong>Same-Origin Policy</strong>. The detection of such vulnerability is still carried out manually by application developers, but the process is error-prone and often underestimated. In this article, we propose a sound and complete methodology to detect the Frame Confusion on Android as well as a publicly-released tool (i.e., <strong>FCDroid</strong>) which implements such methodology and allows to detect the Frame Confusion in hybrid applications, automatically. We also make public the results obtained by analyzing 50K apps using FCDroid, which have revealed that many hybrid applications suffer from Frame Confusion.</p>
 
-<h3 id="the-tool"><strong>The Tool</strong></h3>
-<p class="text-justify">The FCDroid is composed by five main building blocks: the <em>Static Analysis Module (SAM)</em>, the <em>Dynamic Analysis Module (DAM)</em>, the <em>WebSite Dumper (WD)</em>, the <em>Frame Confusion Detector (FCD)</em> and the <em>Exploitation Checker (EC)</em>.</p>
+<h2 id="the-tool">The Tool</h2>
 
-<h3 id="demo"><strong>Demo</strong></h3>
+<p>The detection of Frame Confusion  poses several challenges in terms of implementation. Indeed, an automatic detection tool needs to:</p>
+<ul>
+  <li>achieve maximum coverage, i.e., by detecting all possible app execution paths that may lead to the vulnerability;</li>
+  <li>recognize the actual configuration of WebView components, which may <em>dynamically</em> enable JavaScript or define new interfaces;</li>
+  <li>analyze all the web pages loaded inside some potentially vulnerable WebViews, by also considering those loaded according to i) the user’s input, and ii) the value of runtime variables.</li>
+</ul>
+
+<p class="text-justify">To address such challenges, an automatic tool can rely on static and dynamic analysis techniques.
+Static analysis techniques can examine all possible execution paths and variable values, not just those invoked during execution.
+However, static approaches can <em>i</em>) introduce false positives and <em>ii</em>) be unable to detect complex scenario, like, e.g., values provided by the user or resources loaded at runtime.
+On the other hand, dynamic analysis techniques allow to detect the actual behavior of the app, but it is limited by <em>i</em>) the coverage of the analysis and <em>ii</em>) the time required for the analysis, thus producing potential false negatives.
+To this aim, <strong>FCDroid</strong> combines static and dynamic analysis techniques to overcome the limitations of both techniques and achieve more accurate detection results.
+The FCDroid is composed by five main building blocks: the <em>Static Analysis Module (SAM)</em>, the <em>Dynamic Analysis Module (DAM)</em>, the <em>WebSite Dumper (WD)</em>, the <em>Frame Confusion Detector (FCD)</em> and the <em>Exploitation Checker (EC)</em>.</p>
+
+<h2 id="demo">Demo</h2>
 <p class="text-justify"><em>Coming soon</em></p>
 
-<h3 id="results"><strong>Results</strong></h3>
+<h2 id="results">Results</h2>
 <p class="text-justify"><em>Coming soon</em></p>
 
-<h3 id="team"><strong>Team</strong></h3>
+<h2 id="team">Team</h2>
 <ul>
   <li><a href="https://csec.it/people/davide_caputo">Davide Caputo</a>, University of Genova, Italy</li>
   <li><a href="https://www.talos-sec.com">Luca Verderame</a>, University of Genova, Italy</li>
@@ -51,7 +64,7 @@
   <li><a href="https://csec.it/people/alessio_merlo">Alessio Merlo</a>, University of Genova, Italy</li>
 </ul>
 
-<h3 id="acknowledgment"><strong>Acknowledgment</strong></h3>
+<h2 id="acknowledgment">Acknowledgment</h2>
 </div>
 
       </div>
