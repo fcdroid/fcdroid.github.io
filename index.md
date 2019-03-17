@@ -8,7 +8,6 @@ layout: home
 
 
 
-
 ## The Tool
 
 The detection of Frame Confusion  poses several challenges in terms of implementation. Indeed, an automatic detection tool needs to:
@@ -25,11 +24,11 @@ The FCDroid is composed by five main building blocks: the *Static Analysis Modul
 {: .text-justify}
 
 ## Demo
-*Coming soon*
+> *Coming soon*
 {: .text-justify}
 
 ## Results
-*Coming soon*
+> *Coming soon*
 {: .text-justify}
 
 ## Team
