@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="FCDroid" />
 <script type="application/ld+json">
-{"headline":"FCDroid","@type":"WebSite","url":"http://localhost:4000/","name":"FCDroid","@context":"https://schema.org"}</script>
+{"@type":"WebSite","url":"http://localhost:4000/","name":"FCDroid","headline":"FCDroid","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="FCDroid" /></head>
 <body><header class="site-header" role="banner">
@@ -26,13 +26,13 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <!--<div class="trigger"><a class="page-link" href="/">FCDroid</a></div>-->
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h2 id="abstract">Abstract</h2>
-<p class="text-justify"><strong>Frame Confusion</strong> is a vulnerability affecting hybrid applications which allows circumventing the isolation granted by the <strong>Same-Origin Policy</strong>. The detection of such vulnerability is still carried out manually by application developers, but the process is error-prone and often underestimated. In this article, we propose a sound and complete methodology to detect the Frame Confusion on Android as well as a publicly-released tool (i.e., <strong>FCDroid</strong>) which implements such methodology and allows to detect the Frame Confusion in hybrid applications, automatically. We also make public the results obtained by analyzing 50K apps using FCDroid, which have revealed that many hybrid applications suffer from Frame Confusion.</p>
+        <div class="home"><!--<h1 class="page-heading">FCDroid</h1>--><h2 id="abstract">Abstract</h2>
+<p><strong>Frame Confusion</strong> is a vulnerability affecting hybrid applications which allows circumventing the isolation granted by the <strong>Same-Origin Policy</strong>. The detection of such vulnerability is still carried out manually by application developers, but the process is error-prone and often underestimated. In this article, we propose a sound and complete methodology to detect the Frame Confusion on Android as well as a publicly-released tool (i.e., <strong>FCDroid</strong>) which implements such methodology and allows to detect the Frame Confusion in hybrid applications, automatically. We also make public the results obtained by analyzing 50K apps using FCDroid, which have revealed that many hybrid applications suffer from Frame Confusion.</p>
 
 <h2 id="the-tool">The Tool</h2>
 
@@ -43,7 +43,7 @@
   <li>analyze all the web pages loaded inside some potentially vulnerable WebViews, by also considering those loaded according to i) the user’s input, and ii) the value of runtime variables.</li>
 </ul>
 
-<p class="text-justify">To address such challenges, an automatic tool can rely on static and dynamic analysis techniques.
+<p>To address such challenges, an automatic tool can rely on static and dynamic analysis techniques.
 Static analysis techniques can examine all possible execution paths and variable values, not just those invoked during execution.
 However, static approaches can <em>i</em>) introduce false positives and <em>ii</em>) be unable to detect complex scenario, like, e.g., values provided by the user or resources loaded at runtime.
 On the other hand, dynamic analysis techniques allow to detect the actual behavior of the app, but it is limited by <em>i</em>) the coverage of the analysis and <em>ii</em>) the time required for the analysis, thus producing potential false negatives.
@@ -51,14 +51,10 @@ To this aim, <strong>FCDroid</strong> combines static and dynamic analysis techn
 The FCDroid is composed by five main building blocks: the <em>Static Analysis Module (SAM)</em>, the <em>Dynamic Analysis Module (DAM)</em>, the <em>WebSite Dumper (WD)</em>, the <em>Frame Confusion Detector (FCD)</em> and the <em>Exploitation Checker (EC)</em>.</p>
 
 <h2 id="demo">Demo</h2>
-<blockquote class="text-justify">
-  <p><em>Coming soon</em></p>
-</blockquote>
+<p><em>Coming soon</em></p>
 
 <h2 id="results">Results</h2>
-<blockquote class="text-justify">
-  <p><em>Coming soon</em></p>
-</blockquote>
+<p><em>Coming soon</em></p>
 
 <h2 id="team">Team</h2>
 <ul>
