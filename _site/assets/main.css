@@ -22,9 +22,7 @@ body {
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
-  text-align: justify; // add this line
- }
+  flex-direction: column; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
